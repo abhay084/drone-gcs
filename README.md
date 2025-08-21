@@ -56,7 +56,7 @@ docker run --rm \
   -w $(pwd) \
   plugins/gcs
 ```
-
+fuo;
 * For download
 ```console
 docker run --rm \
