@@ -1,0 +1,39 @@
+pipeline:
+  name: test_new_abhay
+  identifier: test_new_abhay
+  projectIdentifier: Abhay_Test
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: abhaygcsforked
+        build: <+input>
+  stages:
+    - stage:
+        name: qewr
+        identifier: qewr
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          caching:
+            enabled: true
+            override: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: |-
+                      ls
+                      echo lol
