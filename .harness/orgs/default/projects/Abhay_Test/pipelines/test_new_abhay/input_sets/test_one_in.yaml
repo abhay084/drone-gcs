@@ -9,5 +9,7 @@ inputSet:
     properties:
       ci:
         codebase:
-          build: <+input>
-  isInlineHCEntity: false
+          build:
+            type: PR
+            spec:
+              number: <+input>
