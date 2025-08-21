@@ -1,0 +1,14 @@
+inputSet:
+  name: test_2
+  identifier: test_2
+  orgIdentifier: default
+  projectIdentifier: Abhay_Test
+  pipeline:
+    identifier: test_new_abhay
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
