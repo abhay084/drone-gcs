@@ -1,0 +1,14 @@
+inputSet:
+  name: bhedrftgyhujim
+  identifier: bhedrftgyhujim
+  orgIdentifier: default
+  projectIdentifier: Abhay_Test
+  pipeline:
+    identifier: test_new_abhay
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
