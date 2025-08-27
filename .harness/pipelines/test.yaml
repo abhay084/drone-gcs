@@ -9,6 +9,7 @@ pipeline:
       codebase:
         connectorRef: abhaygcsforked
         build: <+input>
+        sparseCheckout: []
   stages:
     - stage:
         name: qewr
